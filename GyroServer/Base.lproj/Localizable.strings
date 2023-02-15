@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  GyroServer
+
+  Created by Matteo Riva on 12/09/15.
+  Copyright © 2015 Matteo Riva. All rights reserved.
+*/
+
+
+"connected" = "Connected";
+"connect_with" = "Connected with IP";
+"completed" = "completed";
+"disconnected" = "Disconnected";
+"conn_terminated" = "Connection ended";
+"act_screen" = "Active screen";
+"chk_updt" = "Check updates...";
+"pref" = "Preferences";
+"open_launch" = "Launch at startup";
+"auto_updt" = "Auto-check for updates";
+"exit" = "Quit";
+"vers_incomp" = "Version incompatible";
+"incomp_message" = "The current GyroServer version isn't compatible with GyroMouse. Update to the latest version";
+
+
+

@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03248283D0F7A6A1852A5FDB /* Pods_GyroServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12146367F02EE027B100A2D6 /* Pods_GyroServer.framework */; };
+		AB09D90E1B9B3752004E06C1 /* ISSoundAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB09D90C1B9B3752004E06C1 /* ISSoundAdditions.m */; };
+		AB349AB11B9A23E500EEDF11 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB349AB01B9A23E500EEDF11 /* Carbon.framework */; };
+		AB3764971BA434FA0094FC1C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB3764991BA434FA0094FC1C /* Localizable.strings */; };
+		AB37649B1BA4350B0094FC1C /* FirstBootWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB37649D1BA4350B0094FC1C /* FirstBootWindowController.xib */; };
+		AB85C2401B9146F200DF39E7 /* GyroPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB85C23F1B9146F200DF39E7 /* GyroPacket.swift */; };
+		AB85C24F1B9210FF00DF39E7 /* KeyCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85C24E1B9210FF00DF39E7 /* KeyCodeGenerator.m */; };
+		ABA1AEA01B754ACD00F3A4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AE9F1B754ACD00F3A4EB /* AppDelegate.swift */; };
+		ABA1AEA41B754ACD00F3A4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA1AEA31B754ACD00F3A4EB /* Assets.xcassets */; };
+		ABA1AEA71B754ACD00F3A4EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA1AEA51B754ACD00F3A4EB /* Main.storyboard */; };
+		ABA1AEB51B754C3E00F3A4EB /* ServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AEB41B754C3E00F3A4EB /* ServerHandler.swift */; };
+		ABA1AEBA1B75604A00F3A4EB /* MouseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AEB91B75604A00F3A4EB /* MouseHandler.swift */; };
+		ABB509061B9D9B7D00E32B35 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = ABB509051B9D9B7D00E32B35 /* dsa_pub.pem */; };
+		ABB509141B9DCE8600E32B35 /* FirstBootWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB509121B9DCE8600E32B35 /* FirstBootWindowController.swift */; };
+		ABF3D51A1B8397920013B861 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF3D5191B8397920013B861 /* CoreGraphics.framework */; };
+		ABF3D51C1B8399110013B861 /* CFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF3D51B1B8399110013B861 /* CFunctions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12146367F02EE027B100A2D6 /* Pods_GyroServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GyroServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB09D90B1B9B3752004E06C1 /* ISSoundAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSoundAdditions.h; sourceTree = "<group>"; };
+		AB09D90C1B9B3752004E06C1 /* ISSoundAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSoundAdditions.m; sourceTree = "<group>"; };
+		AB349AB01B9A23E500EEDF11 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		AB3764981BA434FA0094FC1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB37649A1BA434FC0094FC1C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB37649C1BA4350B0094FC1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FirstBootWindowController.xib; sourceTree = "<group>"; };
+		AB37649F1BA4350E0094FC1C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/FirstBootWindowController.strings; sourceTree = "<group>"; };
+		AB85C23F1B9146F200DF39E7 /* GyroPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GyroPacket.swift; path = "../../../iOS Development/GyroMouse/GyroMouse/GyroPacket.swift"; sourceTree = "<group>"; };
+		AB85C24E1B9210FF00DF39E7 /* KeyCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCodeGenerator.m; sourceTree = "<group>"; };
+		AB85C2501B9212B700DF39E7 /* KeyCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyCodeGenerator.h; sourceTree = "<group>"; };
+		ABA1AE9C1B754ACD00F3A4EB /* GyroServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GyroServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA1AE9F1B754ACD00F3A4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABA1AEA31B754ACD00F3A4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABA1AEA61B754ACD00F3A4EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABA1AEA81B754ACD00F3A4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA1AEAE1B754C0200F3A4EB /* GyroServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GyroServer-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABA1AEB41B754C3E00F3A4EB /* ServerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerHandler.swift; sourceTree = "<group>"; };
+		ABA1AEB91B75604A00F3A4EB /* MouseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseHandler.swift; sourceTree = "<group>"; };
+		ABB509051B9D9B7D00E32B35 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = update_container/dsa_keys/dsa_pub.pem; sourceTree = SOURCE_ROOT; };
+		ABB509121B9DCE8600E32B35 /* FirstBootWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstBootWindowController.swift; sourceTree = "<group>"; };
+		ABF3D5191B8397920013B861 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABF3D51B1B8399110013B861 /* CFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFunctions.m; sourceTree = "<group>"; };
+		ABF3D51D1B8399200013B861 /* CFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFunctions.h; sourceTree = "<group>"; };
+		EB25286E9591C9B1C6B6A15D /* Pods-GyroServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyroServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GyroServer/Pods-GyroServer.release.xcconfig"; sourceTree = "<group>"; };
+		FA5EB0A35C650C11FA22AAEB /* Pods-GyroServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyroServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GyroServer/Pods-GyroServer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABA1AE991B754ACD00F3A4EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB349AB11B9A23E500EEDF11 /* Carbon.framework in Frameworks */,
+				ABF3D51A1B8397920013B861 /* CoreGraphics.framework in Frameworks */,
+				03248283D0F7A6A1852A5FDB /* Pods_GyroServer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0499806167973E63C7A6BACC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF3D5191B8397920013B861 /* CoreGraphics.framework */,
+				AB349AB01B9A23E500EEDF11 /* Carbon.framework */,
+				12146367F02EE027B100A2D6 /* Pods_GyroServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB09D9101B9B3756004E06C1 /* ISSoundAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				AB09D90B1B9B3752004E06C1 /* ISSoundAdditions.h */,
+				AB09D90C1B9B3752004E06C1 /* ISSoundAdditions.m */,
+			);
+			name = ISSoundAdditions;
+			sourceTree = "<group>";
+		};
+		AB349AB21B9B1BB000EEDF11 /* CFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				ABF3D51D1B8399200013B861 /* CFunctions.h */,
+				ABF3D51B1B8399110013B861 /* CFunctions.m */,
+			);
+			name = CFunctions;
+			sourceTree = "<group>";
+		};
+		AB85C24D1B9210C400DF39E7 /* KeyCodeGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				AB85C2501B9212B700DF39E7 /* KeyCodeGenerator.h */,
+				AB85C24E1B9210FF00DF39E7 /* KeyCodeGenerator.m */,
+			);
+			name = KeyCodeGenerator;
+			sourceTree = "<group>";
+		};
+		ABA1AE931B754ACD00F3A4EB = {
+			isa = PBXGroup;
+			children = (
+				ABA1AE9E1B754ACD00F3A4EB /* GyroServer */,
+				ABA1AE9D1B754ACD00F3A4EB /* Products */,
+				ABA1AEB31B754C1600F3A4EB /* Resources */,
+				0499806167973E63C7A6BACC /* Frameworks */,
+				AC6BB76A63E50708DEDF0E7D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		ABA1AE9D1B754ACD00F3A4EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABA1AE9C1B754ACD00F3A4EB /* GyroServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABA1AE9E1B754ACD00F3A4EB /* GyroServer */ = {
+			isa = PBXGroup;
+			children = (
+				ABB509121B9DCE8600E32B35 /* FirstBootWindowController.swift */,
+				AB37649D1BA4350B0094FC1C /* FirstBootWindowController.xib */,
+				ABA1AEB41B754C3E00F3A4EB /* ServerHandler.swift */,
+				ABA1AE9F1B754ACD00F3A4EB /* AppDelegate.swift */,
+				ABA1AEB91B75604A00F3A4EB /* MouseHandler.swift */,
+				AB85C24D1B9210C400DF39E7 /* KeyCodeGenerator */,
+				AB349AB21B9B1BB000EEDF11 /* CFunctions */,
+				ABA1AEA51B754ACD00F3A4EB /* Main.storyboard */,
+				AB3764991BA434FA0094FC1C /* Localizable.strings */,
+				AB85C23F1B9146F200DF39E7 /* GyroPacket.swift */,
+			);
+			path = GyroServer;
+			sourceTree = "<group>";
+		};
+		ABA1AEB31B754C1600F3A4EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB09D9101B9B3756004E06C1 /* ISSoundAdditions */,
+				ABA1AEA31B754ACD00F3A4EB /* Assets.xcassets */,
+				ABA1AEA81B754ACD00F3A4EB /* Info.plist */,
+				ABB509051B9D9B7D00E32B35 /* dsa_pub.pem */,
+				ABA1AEAE1B754C0200F3A4EB /* GyroServer-Bridging-Header.h */,
+			);
+			name = Resources;
+			path = GyroServer;
+			sourceTree = "<group>";
+		};
+		AC6BB76A63E50708DEDF0E7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA5EB0A35C650C11FA22AAEB /* Pods-GyroServer.debug.xcconfig */,
+				EB25286E9591C9B1C6B6A15D /* Pods-GyroServer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABA1AE9B1B754ACD00F3A4EB /* GyroServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA1AEAB1B754ACD00F3A4EB /* Build configuration list for PBXNativeTarget "GyroServer" */;
+			buildPhases = (
+				F79BD64E6D6033695E86D1D7 /* [CP] Check Pods Manifest.lock */,
+				ABA1AE981B754ACD00F3A4EB /* Sources */,
+				ABA1AE991B754ACD00F3A4EB /* Frameworks */,
+				ABA1AE9A1B754ACD00F3A4EB /* Resources */,
+				AB9B2B3E1BA2E3620056AAE0 /* Crashlytics */,
+				E8098FDFFB00C2E0D97C35F9 /* [CP] Embed Pods Frameworks */,
+				72E6F4FD02CFD8584E9B14D6 /* [CP] Copy Pods Resources */,
+				AB3764A01BA4480C0094FC1C /* Sign Sparkle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GyroServer;
+			productName = GyroServer;
+			productReference = ABA1AE9C1B754ACD00F3A4EB /* GyroServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABA1AE941B754ACD00F3A4EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Matteo Riva";
+				TargetAttributes = {
+					ABA1AE9B1B754ACD00F3A4EB = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4ZXHPCY338;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = ABA1AE971B754ACD00F3A4EB /* Build configuration list for PBXProject "GyroServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				it,
+			);
+			mainGroup = ABA1AE931B754ACD00F3A4EB;
+			productRefGroup = ABA1AE9D1B754ACD00F3A4EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABA1AE9B1B754ACD00F3A4EB /* GyroServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABA1AE9A1B754ACD00F3A4EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3764971BA434FA0094FC1C /* Localizable.strings in Resources */,
+				ABA1AEA41B754ACD00F3A4EB /* Assets.xcassets in Resources */,
+				AB37649B1BA4350B0094FC1C /* FirstBootWindowController.xib in Resources */,
+				ABB509061B9D9B7D00E32B35 /* dsa_pub.pem in Resources */,
+				ABA1AEA71B754ACD00F3A4EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72E6F4FD02CFD8584E9B14D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GyroServer/Pods-GyroServer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3764A01BA4480C0094FC1C /* Sign Sparkle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Sparkle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\n# Usually set by Xcode\nCODE_SIGN_IDENTITY=\"Developer ID Application\"\n\ncodesign --verbose --force --sign \"$CODE_SIGN_IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A\"";
+		};
+		AB9B2B3E1BA2E3620056AAE0 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 23d831272b15d19c8c94a74a2ae69374e289efea 010d6944ff7bb866fa9477144e12194fb3205da91641d8a133421b224b8ba028";
+		};
+		E8098FDFFB00C2E0D97C35F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GyroServer/Pods-GyroServer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79BD64E6D6033695E86D1D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABA1AE981B754ACD00F3A4EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB85C2401B9146F200DF39E7 /* GyroPacket.swift in Sources */,
+				AB85C24F1B9210FF00DF39E7 /* KeyCodeGenerator.m in Sources */,
+				AB09D90E1B9B3752004E06C1 /* ISSoundAdditions.m in Sources */,
+				ABF3D51C1B8399110013B861 /* CFunctions.m in Sources */,
+				ABA1AEBA1B75604A00F3A4EB /* MouseHandler.swift in Sources */,
+				ABA1AEA01B754ACD00F3A4EB /* AppDelegate.swift in Sources */,
+				ABA1AEB51B754C3E00F3A4EB /* ServerHandler.swift in Sources */,
+				ABB509141B9DCE8600E32B35 /* FirstBootWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB3764991BA434FA0094FC1C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3764981BA434FA0094FC1C /* Base */,
+				AB37649A1BA434FC0094FC1C /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AB37649D1BA4350B0094FC1C /* FirstBootWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB37649C1BA4350B0094FC1C /* Base */,
+				AB37649F1BA4350E0094FC1C /* it */,
+			);
+			name = FirstBootWindowController.xib;
+			sourceTree = "<group>";
+		};
+		ABA1AEA51B754ACD00F3A4EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABA1AEA61B754ACD00F3A4EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABA1AEA91B754ACD00F3A4EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABA1AEAA1B754ACD00F3A4EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ABA1AEAC1B754ACD00F3A4EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5EB0A35C650C11FA22AAEB /* Pods-GyroServer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GyroServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = it.teoriva.GyroServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GyroServer/GyroServer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ABA1AEAD1B754ACD00F3A4EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB25286E9591C9B1C6B6A15D /* Pods-GyroServer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GyroServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = it.teoriva.GyroServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GyroServer/GyroServer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABA1AE971B754ACD00F3A4EB /* Build configuration list for PBXProject "GyroServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA1AEA91B754ACD00F3A4EB /* Debug */,
+				ABA1AEAA1B754ACD00F3A4EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA1AEAB1B754ACD00F3A4EB /* Build configuration list for PBXNativeTarget "GyroServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA1AEAC1B754ACD00F3A4EB /* Debug */,
+				ABA1AEAD1B754ACD00F3A4EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABA1AE941B754ACD00F3A4EB /* Project object */;
+}

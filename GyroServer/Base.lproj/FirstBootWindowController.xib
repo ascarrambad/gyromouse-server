@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11129.15"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FirstBootWindowController" customModule="GyroServer" customModuleProvider="target">
+            <connections>
+                <outlet property="activeScreenListButton" destination="l6t-Jy-ty4" id="KOw-g5-vGD"/>
+                <outlet property="doneButton" destination="NNy-zO-lxj" id="heV-ac-PN1"/>
+                <outlet property="runAtStartupCheckButton" destination="t96-Y5-o7v" id="AK0-Ak-3yC"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Welcome to GyroServer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES"/>
+            <rect key="contentRect" x="417" y="270" width="564" height="305"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="564" height="305"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mw3-0s-Mwp">
+                        <rect key="frame" x="239" y="206" width="87" height="79"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hi!" id="AqY-9s-w12">
+                            <font key="font" size="66" name=".HelveticaNeueDeskInterface-Regular"/>
+                            <color key="textColor" red="0.16002293410000001" green="0.37113487099999998" blue="0.76751893940000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-az-cNG">
+                        <rect key="frame" x="75" y="113" width="414" height="85"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="19u-Rw-09f">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">GyroServer is the companion app to GyroMouse, available on the App Store. This is the first time you open this app, thus we have a couple question for you. You can always change your choices later.
+Thank you for downloading the app! Have fun (:</string>
+                            <color key="textColor" red="0.16002293410000001" green="0.37113487099999998" blue="0.76751893940000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6t-Jy-ty4">
+                        <rect key="frame" x="260" y="74" width="137" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="132" id="IJq-DE-Maz"/>
+                        </constraints>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyUpOrDown" inset="2" selectedItem="vqi-vs-VXf" id="VBM-Mm-6C9">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="lQX-04-fSF">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="vqi-vs-VXf"/>
+                                    <menuItem title="Item 2" id="9qG-I0-OVH"/>
+                                    <menuItem title="Item 3" id="O9a-Ad-O31"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="setActiveScreenAction:" target="-2" id="eLm-BA-Ec4"/>
+                        </connections>
+                    </popUpButton>
+                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNy-zO-lxj">
+                        <rect key="frame" x="246" y="13" width="73" height="32"/>
+                        <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rht-su-b38">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doneAction:" target="-2" id="c75-gB-cgZ"/>
+                        </connections>
+                    </button>
+                    <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t96-Y5-o7v">
+                        <rect key="frame" x="436" y="18" width="110" height="18"/>
+                        <buttonCell key="cell" type="check" title="Run at startup" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="P3r-XO-3ay">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleLaunchAtStartup:" target="-2" id="j7t-CS-nGn"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-S4-uRq">
+                        <rect key="frame" x="118" y="71" width="138" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Select the screen you wanna use" id="W2T-9N-3Ad">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.16002293410000001" green="0.37113487099999998" blue="0.76751893940000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NNy-zO-lxj" secondAttribute="bottom" constant="20" id="AvL-Jd-Epz"/>
+                    <constraint firstItem="mw3-0s-Mwp" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="C5j-ir-vxK"/>
+                    <constraint firstAttribute="bottom" secondItem="t96-Y5-o7v" secondAttribute="bottom" constant="20" id="EHQ-Fx-1tM"/>
+                    <constraint firstItem="VgZ-S4-uRq" firstAttribute="top" secondItem="Zao-az-cNG" secondAttribute="bottom" constant="8" id="G1R-lu-Kb7"/>
+                    <constraint firstAttribute="trailing" secondItem="t96-Y5-o7v" secondAttribute="trailing" constant="20" id="KnG-mh-YEH"/>
+                    <constraint firstItem="l6t-Jy-ty4" firstAttribute="top" secondItem="Zao-az-cNG" secondAttribute="bottom" constant="15" id="U3e-LD-HIZ"/>
+                    <constraint firstItem="l6t-Jy-ty4" firstAttribute="centerX" secondItem="Zao-az-cNG" secondAttribute="centerX" constant="46" id="V3u-7t-3f9"/>
+                    <constraint firstItem="Zao-az-cNG" firstAttribute="centerX" secondItem="mw3-0s-Mwp" secondAttribute="centerX" id="clH-zj-Gkv"/>
+                    <constraint firstItem="l6t-Jy-ty4" firstAttribute="leading" secondItem="VgZ-S4-uRq" secondAttribute="trailing" constant="8" id="e0h-6P-Prr"/>
+                    <constraint firstItem="NNy-zO-lxj" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="geg-cN-wYu"/>
+                    <constraint firstItem="Zao-az-cNG" firstAttribute="top" secondItem="mw3-0s-Mwp" secondAttribute="bottom" constant="8" id="iMj-Xh-WpZ"/>
+                    <constraint firstItem="mw3-0s-Mwp" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="lun-bM-JDn"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+</document>

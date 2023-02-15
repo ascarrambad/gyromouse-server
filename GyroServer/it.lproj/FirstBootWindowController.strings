@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; title = "GyroServer is the companion app to GyroMouse, available on the App Store. This is the first time you open this app, thus we have a couple question for you. You can always change your choices later.\nThank you for downloading the app! Have fun (:"; ObjectID = "19u-Rw-09f"; */
+"19u-Rw-09f.title" = "GyroServer è un app aggiuntiva per GyroMouse, disponibile sull'App Store. Questa è la prima volta che apri l'app, quindi abbiamo un paio di domande per te. Puoi sempre cambiarle dopo.\nGrazie per aver scaricato l'app! Divertiti (:";
+
+/* Class = "NSTextFieldCell"; title = "Hi!"; ObjectID = "AqY-9s-w12"; */
+"AqY-9s-w12.title" = "Ciao!";
+
+/* Class = "NSWindow"; title = "Welcome to GyroServer"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Benvenuto a GyroServer";
+
+/* Class = "NSButtonCell"; title = "Run at startup"; ObjectID = "P3r-XO-3ay"; */
+"P3r-XO-3ay.title" = "Apri all'avvio";
+
+/* Class = "NSTextFieldCell"; title = "Select the screen you wanna use"; ObjectID = "W2T-9N-3Ad"; */
+"W2T-9N-3Ad.title" = "Scegli lo schermo che vuoi usare";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "rht-su-b38"; */
+"rht-su-b38.title" = "Fatto";
