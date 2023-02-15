@@ -4,4 +4,4 @@
 
 ***Old unmantained Swift 3.x app***
 
-Server companion for an iOS called GyroMouse available at ascarrambad/gyromouse
+Server companion for an iOS called GyroMouse available [here](https://github.com/ascarrambad/gyromouse).
